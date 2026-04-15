@@ -1,3 +1,7 @@
+FROM n8nio/n8n:latest
+
+USER root
+
 # שלב 1: "החזרת" מנהל החבילות (apk) שהוסר מטעמי אבטחה
 RUN ARCH=$(uname -m) && \
     wget -qO- "http://dl-cdn.alpinelinux.org/alpine/latest-stable/main/${ARCH}/" | \
