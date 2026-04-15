@@ -1,8 +1,8 @@
-FROM n8nio/n8n:latest-debian
+FROM n8nio/n8n:latest
 
 USER root
 
-# התקנת דפדפן כרום ופונטים על גרסת דביאן
+# התקנת כרום ופונטים על המערכת החדשה והמעודכנת של n8n
 RUN apt-get update && apt-get install -y \
     chromium \
     fonts-liberation \
